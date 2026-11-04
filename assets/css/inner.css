@@ -1,0 +1,138 @@
+/* ==========================================================
+   INNER PAGES: parts every inner page shares
+   Black page banner with a photo to the edge of the screen, facts bar,
+   running text and the bottom call to action.
+   Each page then loads its own file from css/pages/.
+   ========================================================== */
+:root { --edge: 24px; }
+@media (min-width: 992px) { :root { --edge: calc((100vw - 960px) / 2 + 12px); } }
+@media (min-width: 1200px) { :root { --edge: calc((100vw - 1140px) / 2 + 12px); } }
+@media (min-width: 1400px) { :root { --edge: calc((100vw - 1320px) / 2 + 12px); } }
+
+.page-banner {
+  position: relative;
+  margin-top: var(--header-h);
+  background: var(--black);
+  color: var(--white-80);
+  overflow: hidden;
+}
+.page-banner-text { padding: 72px 48px 84px 0; }
+.page-banner-photo {
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; list-style: none; padding: 0; margin: 0 0 56px; font-size: 14px; }
+.breadcrumb a:hover { color: var(--red); }
+.breadcrumb li { display: flex; align-items: center; gap: 8px; }
+.breadcrumb li + li::before { content: "/"; }
+.breadcrumb [aria-current] { color: var(--black); font-weight: 500; }
+.page-banner .breadcrumb a:hover { color: var(--white); text-decoration: underline; }
+.page-banner .breadcrumb [aria-current] { color: var(--white); }
+.page-title { font-size: clamp(36px, 4.4vw, 60px); font-weight: 700; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; }
+.page-banner .page-title { color: var(--white); }
+.page-title::before { content: ""; display: block; width: 56px; height: 5px; margin-bottom: 26px; background: var(--red); }
+.page-lead { font-size: 18px; line-height: 1.65; margin-bottom: 0; max-width: 560px; }
+
+/* facts bar directly under the banner */
+.page-facts { border-bottom: 1px solid var(--line); }
+.facts-row { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
+.facts-row li { padding: 32px 28px; }
+.facts-row li:first-child { padding-left: 0; }
+.facts-row li + li { border-left: 1px solid var(--line); }
+.facts-row strong { display: block; font-family: var(--font-head); font-size: clamp(26px, 2.6vw, 36px); font-weight: 700; line-height: 1.15; color: var(--black); margin-bottom: 4px; }
+.facts-row span { display: block; font-size: 15px; line-height: 1.5; }
+.facts-row a { display: block; }
+.facts-row a strong { display: flex; align-items: center; gap: 8px; transition: color 0.25s var(--ease); }
+.facts-row a strong i { color: var(--red); font-size: 0.8em; }
+.facts-row a:hover strong { color: var(--red); }
+
+.section-soft { background: var(--soft); }
+.section-tight { padding: 80px 0; }
+.heading-lg { font-size: clamp(30px, 3.8vw, 50px); font-weight: 700; letter-spacing: -0.8px; line-height: 1.14; }
+
+/* running text */
+.prose p { margin-bottom: 1.1em; }
+.prose p:last-child { margin-bottom: 0; }
+.prose ul { display: grid; gap: 10px; margin: 0 0 1.2em; }
+.prose li { position: relative; padding-left: 22px; }
+.prose li::before { content: ""; position: absolute; left: 0; top: 11px; width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+
+/* big text links that lead to the next page */
+.link-rows { border-top: 2px solid var(--black); }
+.link-row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) 40px; align-items: center; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+.link-row h3 { margin: 0; font-size: clamp(21px, 2.2vw, 28px); transition: color 0.25s var(--ease); }
+.link-row p { margin: 0; }
+.link-row i { font-size: 28px; color: var(--black); justify-self: end; transition: transform 0.25s var(--ease), color 0.25s var(--ease); }
+.link-row:hover h3, .link-row:hover i { color: var(--red); }
+.link-row:hover i { transform: translateX(6px); }
+
+/* bottom call to action */
+.cta-strip { padding: 0 0 100px; }
+.cta-strip-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 56px;
+  background: var(--black);
+  border-radius: var(--radius);
+  color: var(--white-80);
+}
+.cta-strip-card h2 { color: var(--white); font-size: clamp(24px, 2.8vw, 36px); margin-bottom: 8px; }
+.cta-strip-card p { margin: 0; max-width: 560px; }
+.cta-strip-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.cta-strip-card .btn-outline { color: var(--white); border-color: var(--white); }
+.cta-strip-card .btn-outline:hover { background: var(--white); color: var(--black); }
+.section-soft + .cta-strip { padding-top: 80px; }
+
+/* chips used to filter lists */
+.filter-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.filter-chip {
+  padding: 9px 18px;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.25s var(--ease);
+}
+.filter-chip:hover { border-color: var(--black); }
+.filter-chip.is-active { background: var(--black); border-color: var(--black); color: var(--white); }
+
+/* side cards: news pages */
+.side-card { padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--soft); margin-bottom: 24px; }
+.side-card h3 { font-size: 19px; margin-bottom: 14px; }
+.side-card p { font-size: 15px; }
+.side-card .btn { width: 100%; white-space: normal; }
+
+@media (max-width: 991.98px) {
+  .page-banner-text { padding: 44px 0 48px; }
+  .breadcrumb { margin-bottom: 36px; }
+  .page-banner-photo { position: relative; width: 100%; height: 280px; }
+  .section-tight { padding: 64px 0; }
+  .cta-strip { padding-bottom: 72px; }
+  .section-soft + .cta-strip { padding-top: 64px; }
+  .cta-strip-card { padding: 40px; }
+}
+@media (max-width: 767.98px) {
+  .facts-row { grid-auto-flow: row; }
+  .facts-row li, .facts-row li:first-child { padding: 20px 0; }
+  .facts-row li + li { border-left: 0; border-top: 1px solid var(--line); }
+  .link-row { grid-template-columns: minmax(0, 1fr) 32px; gap: 6px 16px; padding: 22px 0; }
+  .link-row h3 { grid-column: 1; }
+  .link-row p { grid-column: 1; grid-row: 2; }
+  .link-row i { grid-column: 2; grid-row: 1 / span 2; }
+}
+@media (max-width: 575.98px) {
+  .page-banner-photo { height: 220px; }
+  .page-lead { font-size: 17px; }
+  .cta-strip-card { padding: 30px 24px; }
+  .cta-strip-btns, .cta-strip-btns .btn { width: 100%; }
+}

@@ -1,0 +1,20 @@
+/* Accredited Centres: a directory, one ruled row per city */
+.centres-banner .page-banner-text { padding: 56px 0 72px; max-width: 720px; }
+.centre-chips { margin-bottom: 44px; }
+.centre-city { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; padding: 40px 0; border-top: 1px solid var(--line); }
+.centre-city:first-of-type { border-top: 2px solid var(--black); }
+.centre-city h2 { position: sticky; top: 106px; align-self: start; font-size: clamp(24px, 2.4vw, 32px); letter-spacing: -0.4px; margin: 0; }
+.centre-city h2 small { display: block; margin-top: 6px; color: var(--text); font-family: var(--font-body); font-size: 15px; font-weight: 400; letter-spacing: 0; }
+.centre-section { overflow: visible; }
+.centre-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.centre-card { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: center; gap: 14px; padding: 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--white); color: var(--black); font-size: 14.5px; font-weight: 500; line-height: 1.4; transition: border-color 0.25s var(--ease), color 0.25s var(--ease); }
+a.centre-card:hover { border-color: var(--red); color: var(--red); }
+.centre-card img { width: 76px; height: 60px; object-fit: contain; }
+
+@media (max-width: 1199.98px) { .centre-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 991.98px) {
+  .centre-city { grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 30px 0; }
+  .centre-city h2 { position: static; }
+  .centres-banner .page-banner-text { padding: 44px 0 48px; }
+}
+@media (max-width: 575.98px) { .centre-grid { grid-template-columns: minmax(0, 1fr); } }

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home (Version B) - GEMS Pathway Pakistan</title>
+  <meta name="description" content="GEMS Pathways Pakistan, a proud subsidiary of GEMS Middle East Holding UAE and City & Guilds Authorised Representative, delivers industry-proven qualifications and accredited programmes across Pakistan.">
+  <link rel="icon" href="assets/images/gems-icon.png">
+
+  <!-- Fonts: Poppins (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap grid only (container / row / col) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/vendor/remixicon/remixicon.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <ul class="topbar-info">
+          <li><i class="ri-mail-line"></i><a href="mailto:info@gemspathway.com.pk">info@gemspathway.com.pk</a></li>
+          <li><i class="ri-phone-line"></i><a href="tel:+923008590779">0300 8590779</a></li>
+          <li class="topbar-address"><i class="ri-map-pin-line"></i>Office No 508, Marine Point, DC-1, Block-9 Clifton, Karachi</li>
+        </ul>
+        <ul class="topbar-social">
+          <li><a href="https://www.facebook.com/profile.php?id=61569192494402" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/gems-pathways-pakistan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a></li>
+          <li><a href="https://www.instagram.com/gemspathwayspk" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="home-v2.html" class="brand" aria-label="GEMS Pathways Pakistan - Home">
+          <img src="assets/images/gems-logo.png" alt="GEMS Pathways" class="brand-logo">
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <div class="nav-mobile-head">
+            <img src="assets/images/gems-logo.png" alt="GEMS Pathways" class="brand-logo">
+            <button class="nav-close" id="navClose" type="button" aria-label="Close menu"><i class="ri-close-line"></i></button>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="home-v2.html" class="active">Home</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="about.html">About <i class="ri-arrow-down-s-line"></i></a>
+              <ul class="dropdown">
+                <li><a href="about.html">About GEMS Pathways</a></li>
+                <li><a href="about-city-guilds.html">About City &amp; Guilds</a></li>
+                <li><a href="our-board.html">Our Board</a></li>
+                <li><a href="licensing-approvals.html">Licensing and Approvals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="global-footprint.html">Global Footprint</a></li>
+            <li class="nav-item"><a href="our-services.html">Our Services</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="accredited-programmes.html">Our Programs <i class="ri-arrow-down-s-line"></i></a>
+              <ul class="dropdown">
+                <li><a href="accredited-programmes.html">Accredited Programmes</a></li>
+                <li><a href="global-hospitality.html">Global Hospitality</a></li>
+                <li><a href="teacher-training.html">Teachers Training</a></li>
+                <li><a href="engineering.html">Engineering</a></li>
+                <li><a href="fashion-design.html">Interior and Fashion Design</a></li>
+                <li><a href="leadership-management.html">Leadership, Management, Coaching and Mentoring</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="accredited-centres.html">Accredited Centres</a></li>
+            <li class="nav-item"><a href="news-events.html">News &amp; Events</a></li>
+          </ul>
+          <a href="work-with-us.html" class="btn btn-red nav-cta-mobile">Work with Us</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="work-with-us.html" class="btn btn-red header-cta">Work with Us <i class="ri-arrow-right-up-line"></i></a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+    <!-- ================= HERO SLIDER ================= -->
+    <section class="hero hero-c" id="home">
+      <span class="deco deco-ring deco-ring-lg hero-ring-1"></span>
+      
+      <div class="container">
+        <div class="hero-top">
+          <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1 -->
+              <div class="swiper-slide hero-slide">
+                <div class="hero-content">
+                  <span class="hero-tag"><i class="ri-verified-badge-fill"></i>City &amp; Guilds Authorised Representative</span>
+                  <h1 class="hero-title">Crafting Futures with Industry-Proven <span class="hl">Qualifications</span>.</h1>
+                  <p class="hero-sub">Building a skilled workforce for Pakistan through internationally recognised City &amp; Guilds qualifications.</p>
+                  <div class="hero-btns">
+                    <a href="about.html" class="btn btn-red">Read More <i class="ri-arrow-right-line"></i></a>
+                    <a href="#qualifications" class="btn btn-outline">Our Qualifications</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide hero-slide">
+                <div class="hero-content">
+                  <span class="hero-tag"><i class="ri-verified-badge-fill"></i>City &amp; Guilds Authorised Representative</span>
+                  <h1 class="hero-title">Empowering Change through Accessible <span class="hl">Career Pathways</span>.</h1>
+                  <p class="hero-sub">Accessible career pathways in IT, hospitality, tourism &amp; medical sciences for all backgrounds.</p>
+                  <div class="hero-btns">
+                    <a href="accredited-programmes.html" class="btn btn-red">Read More <i class="ri-arrow-right-line"></i></a>
+                    <a href="work-with-us.html" class="btn btn-outline">Work with Us</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide hero-slide">
+                <div class="hero-content">
+                  <span class="hero-tag"><i class="ri-verified-badge-fill"></i>City &amp; Guilds Authorised Representative</span>
+                  <h1 class="hero-title">Fueling Growth, Skilling Up for <span class="hl">Tomorrow&rsquo;s</span> Industry.</h1>
+                  <p class="hero-sub">Skill up for tomorrow&rsquo;s industry demands with programmes built around real workplace skills.</p>
+                  <div class="hero-btns">
+                    <a href="our-services.html" class="btn btn-red">Read More <i class="ri-arrow-right-line"></i></a>
+                    <a href="application-form.html" class="btn btn-outline">Become a Centre</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-trust"><i class="ri-shield-check-fill"></i>Trusted by hundreds of institutions &amp; thousands of teachers</span>
+            <div class="swiper-pagination hero-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Photo row -->
+        <div class="hero-gallery">
+          <div class="hero-tile hero-tile-1"><img src="assets/images/welcome-students.jpg" alt="Students in a classroom"></div>
+          <div class="hero-tile hero-tile-2"><img src="assets/images/prog-it.webp" alt="IT training"></div>
+          <div class="hero-tile hero-card">
+            <strong><span class="counter" data-count="2000000" data-suffix="+" data-short="true">2M+</span></strong>
+            <span class="hero-card-label">Children Reached</span>
+            <div class="hero-card-icons">
+              <span><i class="ri-building-2-line"></i></span>
+              <span><i class="ri-graduation-cap-line"></i></span>
+              <span><i class="ri-user-star-line"></i></span>
+              <span class="plus"><i class="ri-add-line"></i></span>
+            </div>
+          </div>
+          <div class="hero-tile hero-tile-4"><img src="assets/images/prog-health.jpg" alt="Health and social care training"></div>
+          <div class="hero-tile hero-tile-5"><img src="assets/images/prog-hospitality.jpg" alt="Hospitality training"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CITY & GUILDS TRUST STRIP ================= -->
+    <section class="trust" id="city-guilds">
+      <div class="container">
+        <div class="trust-card glass">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-3">
+              <div class="trust-badge">
+                <img src="assets/images/city-guilds.png" alt="City & Guilds Authorised Representative">
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="trust-item">
+                    <span class="circle-icon"><i class="ri-award-line"></i></span>
+                    <div>
+                      <h4>City &amp; Guilds</h4>
+                      <p>Authorised Representative in Pakistan for globally recognised qualifications.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="trust-item">
+                    <span class="circle-icon"><i class="ri-building-4-line"></i></span>
+                    <div>
+                      <h4>GEMS Middle East</h4>
+                      <p>A proud subsidiary of GEMS Middle East Holding, UAE.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="trust-item">
+                    <span class="circle-icon"><i class="ri-verified-badge-line"></i></span>
+                    <div>
+                      <h4>Licensed &amp; Approved</h4>
+                      <p>Quality-assured delivery through accredited centres.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WELCOME / ABOUT ================= -->
+    <section class="section about" id="about">
+      <span class="deco deco-ring deco-ring-lg about-ring"></span>
+      <span class="deco deco-blob about-blob"></span>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="tile-grid">
+              <a href="#qualifications" class="tile">
+                <img src="assets/images/welcome-students.jpg" alt="Students in a classroom">
+                <span class="tile-label">City &amp; Guilds Qualifications</span>
+              </a>
+              <a href="accredited-programmes.html" class="tile">
+                <img src="assets/images/prog-it.webp" alt="IT training">
+                <span class="tile-label">Accredited Programmes</span>
+              </a>
+              <a href="teacher-training.html" class="tile">
+                <img src="assets/images/prog-health.jpg" alt="Teacher training session">
+                <span class="tile-label">Teachers Training</span>
+              </a>
+              <a href="our-services.html" class="tile">
+                <img src="assets/images/learner-laptop.jpg" alt="Learner studying online">
+                <span class="tile-label">Skills for Industry</span>
+              </a>
+              <span class="tile-badge circle-icon circle-icon-lg"><img src="assets/images/gems-icon.png" alt=""></span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <span class="eyebrow">Welcome</span>
+              <h2 class="section-title">GEMS Pathways Pakistan</h2>
+              <p class="lead-text">A proud subsidiary of GEMS Middle East Holding UAE, dedicated to transforming education in Pakistan by partnering with government ministries, universities, colleges, and schools.</p>
+              <p>Our mission is to enable our clients to enhance learning outcomes, develop essential skills, and enrich the lives of children and young people. We have formed valuable partnerships with hundreds of educational institutions and have supported the professional development of thousands of teachers. This commitment has resulted in the improvement of education for millions of children across the nation.</p>
+              <div class="mv-grid">
+                <div class="mv-card glass">
+                  <span class="circle-icon"><i class="ri-focus-3-line"></i></span>
+                  <h3>Our Mission</h3>
+                  <p>To support governments and clients in enhancing education systems by providing expert guidance, managing impactful programs, and equipping schools and teachers with the necessary tools to improve learning outcomes.</p>
+                </div>
+                <div class="mv-card glass">
+                  <span class="circle-icon"><i class="ri-eye-line"></i></span>
+                  <h3>Our Vision</h3>
+                  <p>To empower students worldwide by providing access to high-quality education, enabling them to improve their lives and contribute to a better future.</p>
+                </div>
+              </div>
+              <a href="about.html" class="btn btn-red">Read More <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS BAND ================= -->
+    <section class="section impact">
+      <span class="deco deco-ring deco-ring-lg impact-deco"></span>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4">
+            <div class="impact-content">
+              <span class="eyebrow">Our Impact</span>
+              <h2 class="section-title">Numbers That Speak for Us</h2>
+              <p>We have formed valuable partnerships with hundreds of educational institutions and have supported the professional development of thousands of teachers. This commitment has resulted in the improvement of education for millions of children across the nation.</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="impact-grid">
+              <div class="impact-item">
+                <div class="impact-ring">
+                  <svg viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="ring-track" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-fill" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <span class="impact-num"><span class="counter" data-count="500" data-suffix="+">500+</span></span>
+                </div>
+                <p>Institution Partnerships</p>
+              </div>
+              <div class="impact-item">
+                <div class="impact-ring">
+                  <svg viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="ring-track" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-fill" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <span class="impact-num"><span class="counter" data-count="5000" data-suffix="+" data-short="true">5K+</span></span>
+                </div>
+                <p>Teachers Trained</p>
+              </div>
+              <div class="impact-item">
+                <div class="impact-ring">
+                  <svg viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="ring-track" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-fill" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <span class="impact-num"><span class="counter" data-count="2000000" data-suffix="+" data-short="true">2M+</span></span>
+                </div>
+                <p>Children Reached</p>
+              </div>
+              <div class="impact-item">
+                <div class="impact-ring">
+                  <svg viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="ring-track" cx="60" cy="60" r="54"></circle>
+                    <circle class="ring-fill" cx="60" cy="60" r="54"></circle>
+                  </svg>
+                  <span class="impact-num"><span class="counter" data-count="12" data-suffix="+">12+</span></span>
+                </div>
+                <p>Programme Areas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CITY & GUILDS QUALIFICATIONS ================= -->
+    <section class="section qualifications" id="qualifications">
+      <span class="deco deco-blob qual-blob"></span>
+      <span class="deco deco-ring qual-ring"></span>
+      <div class="container">
+        <div class="section-head-center">
+          <span class="eyebrow eyebrow-center">City &amp; Guilds Qualification</span>
+          <h2 class="section-title">Discover Our Qualifications</h2>
+          <p class="section-sub">Globally recognised City &amp; Guilds qualifications delivered in Pakistan — practical, rigorous and trusted by employers.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a href="global-hospitality.html" class="qual-tile">
+              <img src="assets/images/q-hospitality.jpg" alt="Global Hospitality">
+              <div class="qual-tile-body">
+                <span class="circle-icon"><i class="ri-restaurant-2-line"></i></span>
+                <h3>Global Hospitality</h3>
+                <p>World-class service, food and hotel operations skills.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="teacher-training.html" class="qual-tile">
+              <img src="assets/images/q-teaching.jpg" alt="Teachers Training">
+              <div class="qual-tile-body">
+                <span class="circle-icon"><i class="ri-presentation-line"></i></span>
+                <h3>Teachers Training</h3>
+                <p>Modern pedagogy and classroom excellence for educators.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="fashion-design.html" class="qual-tile">
+              <img src="assets/images/q-fashion.jpg" alt="Interior and Fashion Design">
+              <div class="qual-tile-body">
+                <span class="circle-icon"><i class="ri-palette-line"></i></span>
+                <h3>Interior &amp; Fashion Design</h3>
+                <p>Creative and technical skills for the design industry.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <a href="engineering.html" class="qual-tile qual-tile-wide">
+              <img src="assets/images/q-engineering.jpg" alt="Engineering">
+              <div class="qual-tile-body">
+                <span class="circle-icon"><i class="ri-settings-5-line"></i></span>
+                <h3>Engineering</h3>
+                <p>Hands-on technical qualifications for a modern engineering workforce.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <a href="leadership-management.html" class="qual-tile qual-tile-wide">
+              <img src="assets/images/q-leadership.jpg" alt="Leadership, Management, Coaching and Mentoring">
+              <div class="qual-tile-body">
+                <span class="circle-icon"><i class="ri-compass-3-line"></i></span>
+                <h3>Leadership, Management, Coaching &amp; Mentoring</h3>
+                <p>Develop leaders who inspire teams and drive results.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACCREDITED PROGRAMS (SLIDER) ================= -->
+    <section class="section programs" id="programs">
+      <span class="deco deco-ring deco-ring-lg prog-ring"></span>
+      <span class="deco deco-dot prog-dot"></span>
+      <div class="container">
+        <div class="row align-items-end section-head">
+          <div class="col-lg-7">
+            <span class="eyebrow">GEMS Pathways</span>
+            <h2 class="section-title">Accredited Programs</h2>
+          </div>
+          <div class="col-lg-5">
+            <div class="programs-nav">
+              <button class="prog-prev" type="button" aria-label="Previous programs"><i class="ri-arrow-left-line"></i></button>
+              <button class="prog-next" type="button" aria-label="Next programs"><i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper programs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-business.jpg" alt="Business and Management"></div>
+                <span class="circle-icon prog-icon"><i class="ri-briefcase-4-line"></i></span>
+                <div class="prog-body">
+                  <h3>Business / Management / Customer Service / Sales / Marketing / Social Media</h3>
+                  <p>Unlock success with innovative courses in leadership, strategy, customer engagement, and digital growth.</p>
+                  <a href="accredited-programmes.html#business" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-health.jpg" alt="Health and Social Care"></div>
+                <span class="circle-icon prog-icon"><i class="ri-heart-pulse-line"></i></span>
+                <div class="prog-body">
+                  <h3>Health and Social Care / Health, Safety &amp; Environment</h3>
+                  <p>Advance in health, safety, and care expertise.</p>
+                  <a href="accredited-programmes.html#health" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-it.webp" alt="Information Technology"></div>
+                <span class="circle-icon prog-icon"><i class="ri-computer-line"></i></span>
+                <div class="prog-body">
+                  <h3>IT</h3>
+                  <p>Build expertise in IT and innovation.</p>
+                  <a href="accredited-programmes.html#it" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-construction.jpg" alt="Construction and Engineering"></div>
+                <span class="circle-icon prog-icon"><i class="ri-building-2-line"></i></span>
+                <div class="prog-body">
+                  <h3>Construction / Engineering</h3>
+                  <p>Learn modern building and engineering skills.</p>
+                  <a href="accredited-programmes.html#construction" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-finance.webp" alt="Finance and Accounting"></div>
+                <span class="circle-icon prog-icon"><i class="ri-line-chart-line"></i></span>
+                <div class="prog-body">
+                  <h3>Finance and Accounting</h3>
+                  <p>Gain expertise in managing finances, budgets, and investments.</p>
+                  <a href="accredited-programmes.html#finance" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-beauty.jpg" alt="Hair, Beauty, Fashion and Creatives"></div>
+                <span class="circle-icon prog-icon"><i class="ri-scissors-cut-line"></i></span>
+                <div class="prog-body">
+                  <h3>Hair / Beauty / Fashion / Creatives</h3>
+                  <p>Enhance your skills in styling, beauty, and creative expression.</p>
+                  <a href="accredited-programmes.html#beauty" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="prog-card glass">
+                <div class="prog-img"><img src="assets/images/prog-hospitality.jpg" alt="Hospitality, Catering and Tourism"></div>
+                <span class="circle-icon prog-icon"><i class="ri-plane-line"></i></span>
+                <div class="prog-body">
+                  <h3>Hospitality / Catering / Tourism</h3>
+                  <p>Shine in service, culinary arts, and travel management.</p>
+                  <a href="accredited-programmes.html#hospitality" class="prog-link">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-pagination programs-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUSTED BAND ================= -->
+    <section class="trusted" id="trusted">
+      <div class="trusted-bg">
+        <video class="trusted-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/prog-business.jpg" aria-hidden="true">
+          <source src="assets/videos/trusted.mp4" type="video/mp4">
+        </video>
+      </div>
+      <span class="deco deco-ring deco-ring-lg trusted-ring"></span>
+      <div class="container">
+        <div class="trusted-inner">
+          <span class="circle-icon circle-icon-xl trusted-icon"><i class="ri-shield-check-line"></i></span>
+          <span class="eyebrow eyebrow-center eyebrow-light">We Are Trusted</span>
+          <h2 class="section-title">Thousands of Teachers &amp; Hundreds of Institutions Trust GEMS Pathways</h2>
+          <p>Our extensive experience in designing and implementing large, technically complex education projects sets us apart, offering proven and practical expertise in delivering education services across diverse contexts.</p>
+          <a href="#contact" class="btn btn-red">Get Started Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR SERVICES ================= -->
+    <section class="section services" id="services">
+      <span class="deco deco-blob services-blob"></span>
+      <span class="deco deco-dot services-dot"></span>
+      <div class="container">
+        <div class="section-head-center">
+          <span class="eyebrow eyebrow-center">Our Services</span>
+          <h2 class="section-title">Partnering Across Pakistan's Education Ecosystem</h2>
+          <p class="section-sub">We partner with government ministries, universities, colleges, and schools to enhance learning outcomes and develop essential skills.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-card glass">
+              <span class="circle-icon circle-icon-lg"><i class="ri-government-line"></i></span>
+              <h3>Government Ministries</h3>
+              <p>Designing and implementing large, technically complex education projects.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-card glass">
+              <span class="circle-icon circle-icon-lg"><i class="ri-bank-line"></i></span>
+              <h3>Universities</h3>
+              <p>Industry-recognised qualifications that complement academic degrees.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-card glass">
+              <span class="circle-icon circle-icon-lg"><i class="ri-school-line"></i></span>
+              <h3>Colleges</h3>
+              <p>Becoming accredited centres to deliver City &amp; Guilds programmes.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="service-card glass">
+              <span class="circle-icon circle-icon-lg"><i class="ri-book-open-line"></i></span>
+              <h3>Schools</h3>
+              <p>Enhancing learning outcomes and teacher professional development.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY GEMS PATHWAYS ================= -->
+    <section class="section why">
+      <span class="deco deco-blob why-blob"></span>
+      <span class="deco deco-ring why-ring"></span>
+      <span class="deco deco-dot why-dot"></span>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="why-content">
+              <span class="eyebrow">Why GEMS Pathways</span>
+              <h2 class="section-title">Proven Expertise, Trusted Results</h2>
+              <p>From design to delivery, we bring international standards and practical, on-the-ground experience to every education project in Pakistan.</p>
+              <a href="#contact" class="btn btn-red">Work with Us <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="why-card glass-dark">
+                  <span class="why-num">01</span>
+                  <h3>Global Recognition</h3>
+                  <p>City &amp; Guilds qualifications respected by employers worldwide.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="why-card glass-dark">
+                  <span class="why-num">02</span>
+                  <h3>Industry-Proven</h3>
+                  <p>Programmes built around real workplace skills and industry demands.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="why-card glass-dark">
+                  <span class="why-num">03</span>
+                  <h3>Accessible to All</h3>
+                  <p>Career pathways open to learners from every background.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="why-card glass-dark">
+                  <span class="why-num">04</span>
+                  <h3>Nationwide Impact</h3>
+                  <p>Hundreds of partner institutions and millions of children reached.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT / CTA ================= -->
+    <section class="section news" id="news">
+      <span class="deco deco-ring deco-ring-lg news-ring"></span>
+      <span class="deco deco-dot news-dot"></span>
+      <div class="container">
+        <div class="row align-items-end section-head">
+          <div class="col-lg-7">
+            <span class="eyebrow">Latest Updates</span>
+            <h2 class="section-title">News &amp; Events</h2>
+          </div>
+          <div class="col-lg-5 news-action">
+            <a href="news-events.html" class="btn btn-black">All News <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="news-card glass">
+              <a href="news/meezan-justuju-scholarship-programme-certificate-distribution-ceremony-held-at-miti.html" class="news-img">
+                <img src="assets/images/news-meezan.jpg" alt="Meezan Justuju Scholarship certificate distribution ceremony">
+              </a>
+                <span class="news-date"><strong>29</strong>Oct 2026</span>
+              <div class="news-body">
+                <span class="news-meta"><i class="ri-calendar-event-line"></i>Event</span>
+                <h3><a href="news/meezan-justuju-scholarship-programme-certificate-distribution-ceremony-held-at-miti.html">Meezan Justuju Scholarship Programme – Certificate Distribution Ceremony Held at MITI</a></h3>
+                <a href="news/meezan-justuju-scholarship-programme-certificate-distribution-ceremony-held-at-miti.html" class="news-link">Read More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="news-card glass">
+              <a href="news/gems-pathways-technical-education-gilgit-baltistan.html" class="news-img">
+                <img src="assets/images/news-gb.jpg" alt="GEMS Pathways partnership with Gilgit-Baltistan">
+              </a>
+                <span class="news-date"><strong>26</strong>Oct 2026</span>
+              <div class="news-body">
+                <span class="news-meta"><i class="ri-newspaper-line"></i>News</span>
+                <h3><a href="news/gems-pathways-technical-education-gilgit-baltistan.html">GEMS Pathways Partners with Gilgit-Baltistan to Advance Technical Education and Global Employability</a></h3>
+                <a href="news/gems-pathways-technical-education-gilgit-baltistan.html" class="news-link">Read More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="news-card glass">
+              <a href="news/shaping-the-future-of-skills-pakistans-historic-global-skills-summit.html" class="news-img">
+                <img src="assets/images/news-summit.png" alt="Pakistan's Global Skills Summit">
+              </a>
+                <span class="news-date"><strong>11</strong>Feb 2026</span>
+              <div class="news-body">
+                <span class="news-meta"><i class="ri-newspaper-line"></i>News</span>
+                <h3><a href="news/shaping-the-future-of-skills-pakistans-historic-global-skills-summit.html">Shaping the Future of Skills: Pakistan's Historic Global Skills Summit</a></h3>
+                <a href="news/shaping-the-future-of-skills-pakistans-historic-global-skills-summit.html" class="news-link">Read More <i class="ri-arrow-right-line"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <span class="deco deco-ring deco-ring-lg contact-ring"></span>
+      <span class="deco deco-ring contact-ring-2"></span>
+      <span class="deco deco-dot contact-dot"></span>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="contact-content">
+              <span class="eyebrow">Work with Us</span>
+              <h2 class="section-title">Ready to Partner with GEMS Pathways?</h2>
+              <p>Talk to our team about qualifications, partnerships and becoming an accredited centre. We'll get back to you within one working day.</p>
+              <ul class="contact-list">
+                <li><span class="circle-icon"><i class="ri-phone-line"></i></span><a href="tel:+923008590779">0300 8590779</a></li>
+                <li><span class="circle-icon"><i class="ri-mail-line"></i></span><a href="mailto:info@gemspathway.com.pk">info@gemspathway.com.pk</a></li>
+                <li><span class="circle-icon"><i class="ri-map-pin-line"></i></span><span>Office No 508, Marine Point, DC-1, Block-9 Clifton, Karachi</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form class="contact-form" action="#" method="post">
+              <h3>Send us a message</h3>
+              <p>Fill in the form and our team will contact you.</p>
+              <div class="form-field">
+                <i class="ri-user-line"></i>
+                <input type="text" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <i class="ri-mail-line"></i>
+                <input type="email" name="email" placeholder="Email address" required>
+              </div>
+              <div class="form-field">
+                <i class="ri-phone-line"></i>
+                <input type="tel" name="phone" placeholder="Phone number">
+              </div>
+              <div class="form-field form-field-textarea">
+                <i class="ri-chat-3-line"></i>
+                <textarea name="message" rows="3" placeholder="How can we help?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-red btn-block">Send Message <i class="ri-send-plane-line"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/images/gems-logo.png" alt="GEMS Pathways" class="footer-logo">
+          <p class="footer-about">GEMS Pathways Pakistan, a proud subsidiary of GEMS Middle East Holding UAE, is dedicated to transforming education in Pakistan.</p>
+          <ul class="footer-social">
+            <li><a href="https://www.facebook.com/profile.php?id=61569192494402" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/gems-pathways-pakistan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a></li>
+            <li><a href="https://www.instagram.com/gemspathwayspk" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="accredited-programmes.html">Our Programs</a></li>
+            <li><a href="our-services.html">Services</a></li>
+            <li><a href="our-board.html">Our Board</a></li>
+            <li><a href="work-with-us.html">Work with Us</a></li>
+            <li><a href="news-events.html">News &amp; Events</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h4 class="footer-title">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="about-city-guilds.html">City &amp; Guilds</a></li>
+            <li><a href="global-hospitality.html">Global Hospitality</a></li>
+            <li><a href="teacher-training.html">Teachers Training</a></li>
+            <li><a href="engineering.html">Engineering</a></li>
+            <li><a href="fashion-design.html">Interior and Fashion Design</a></li>
+            <li><a href="leadership-management.html">Leadership, Management, Coaching and Mentoring</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="ri-map-pin-line"></i><span>Office No 508, Marine Point, DC-1, Block-9 Clifton, Karachi</span></li>
+            <li><i class="ri-phone-line"></i><a href="tel:+923008590779">0300 8590779</a></li>
+            <li><i class="ri-mail-line"></i><a href="mailto:info@gemspathway.com.pk">info@gemspathway.com.pk</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright <span id="year">2026</span> GEMS Pathways Pakistan</p>
+        <p><a href="licensing-approvals.html">Licensing and Approvals</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

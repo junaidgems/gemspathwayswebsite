@@ -1,0 +1,23 @@
+/* Become an Approved Centre: the form rises into the banner */
+.apply-banner .page-banner-text { padding: 56px 0 170px; max-width: 860px; }
+.apply-section { overflow: visible; padding-top: 0; }
+.apply-form { position: relative; margin-top: -110px; padding: 48px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+.form-field { margin-bottom: 26px; }
+.form-field label { display: block; margin-bottom: 2px; font-family: var(--font-head); font-size: 14px; font-weight: 500; color: var(--black); }
+.form-field input { width: 100%; padding: 10px 0; border: 0; border-bottom: 2px solid var(--line); border-radius: 0; background: transparent; color: var(--black); font-size: 17px; outline: none; transition: border-color 0.25s var(--ease); }
+.form-field input:focus { border-color: var(--red); }
+.apply-form .btn { margin-top: 8px; }
+
+.apply-side { padding-top: 56px; }
+.apply-side h2 { font-size: clamp(24px, 2.4vw, 30px); }
+.apply-side ul { margin-top: 24px; border-top: 2px solid var(--black); }
+.apply-side li { display: flex; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); color: var(--black); font-weight: 500; overflow-wrap: anywhere; }
+.apply-side i { color: var(--red); font-size: 20px; flex-shrink: 0; }
+.apply-side a:hover { color: var(--red); }
+
+@media (max-width: 991.98px) {
+  .apply-banner .page-banner-text { padding: 44px 0 110px; }
+  .apply-form { margin-top: -70px; }
+  .apply-side { padding-top: 0; }
+}
+@media (max-width: 575.98px) { .apply-form { padding: 28px 22px; } }

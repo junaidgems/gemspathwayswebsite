@@ -1,0 +1,22 @@
+/* Licensing and Approvals: the letter itself is the main thing on the page */
+.lic-banner .page-banner-text { padding: 56px 0 84px; max-width: 760px; }
+.lic-section { overflow: visible; padding-top: 70px; }
+.letter-link { display: block; position: relative; margin-top: -190px; padding: 14px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--white); }
+.letter-link img { width: 100%; }
+.letter-tag { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 0 2px; color: var(--black); font-family: var(--font-head); font-size: 14px; font-weight: 600; transition: color 0.25s var(--ease); }
+.letter-link:hover .letter-tag { color: var(--red); }
+
+.approval-facts { margin: 30px 0; border-top: 2px solid var(--black); }
+.approval-facts li { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 4px 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.approval-facts span { font-size: 15px; }
+.approval-facts strong { color: var(--black); font-weight: 600; }
+.approval-note { margin-bottom: 28px; font-size: 15px; }
+
+@media (max-width: 991.98px) {
+  .lic-banner .page-banner-text { padding: 44px 0 110px; }
+  .letter-link { margin-top: -130px; max-width: 480px; }
+  .lic-section { padding-top: 40px; }
+}
+@media (max-width: 575.98px) {
+  .approval-facts li { grid-template-columns: minmax(0, 1fr); }
+}

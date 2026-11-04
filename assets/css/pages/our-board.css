@@ -1,0 +1,28 @@
+/* Our Board and Management */
+.board-banner .page-banner-text { padding: 56px 0 190px; max-width: 720px; }
+.board-section { overflow: visible; padding-top: 0; }
+.board-lead { margin-top: -130px; margin-bottom: 90px; position: relative; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.leader-card { display: grid; grid-template-columns: 220px minmax(0, 1fr); height: 100%; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.leader-card img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; object-position: top; }
+.leader-body { display: flex; flex-direction: column; justify-content: center; padding: 28px; }
+.leader-body span { font-family: var(--font-head); font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+.leader-body h3 { font-size: clamp(21px, 2vw, 26px); margin-bottom: 10px; }
+.leader-body p { margin: 0; }
+
+.team-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; }
+.person-photo { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; object-position: top; border-radius: var(--radius-sm); background: var(--soft); margin-bottom: 16px; }
+.person-card h3 { font-size: 17px; margin-bottom: 6px; }
+.person-card p { margin: 0; font-size: 14.5px; line-height: 1.5; }
+
+@media (max-width: 991.98px) {
+  .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .board-lead { margin-bottom: 64px; }
+}
+@media (max-width: 575.98px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+  .leader-card { grid-template-columns: 130px minmax(0, 1fr); }
+  .leader-card img { min-height: 200px; }
+  .leader-body { padding: 18px; }
+}

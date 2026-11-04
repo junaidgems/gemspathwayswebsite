@@ -1,0 +1,33 @@
+/* About City & Guilds */
+.page-banner-photo { background-image: url("../../images/about/healthcare-team.jpg"); }
+
+/* history as a dated timeline */
+.cg-lead { margin-bottom: 36px; }
+.history { border-top: 2px solid var(--black); }
+.history li { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 20px; padding: 26px 0; border-bottom: 1px solid var(--line); }
+.history strong { font-family: var(--font-head); font-size: 30px; font-weight: 700; line-height: 1.15; color: var(--red); }
+.history p { margin: 0 0 0.7em; }
+.history p:last-child { margin: 0; }
+.cg-history { position: sticky; top: 110px; display: grid; place-items: center; min-height: 460px; padding: 30px; background: var(--black); border-radius: var(--radius); }
+.cg-history img { max-height: 420px; width: auto; }
+.cg-history-section { overflow: visible; }
+
+/* numbers in one ruled table, no cards */
+.cg-numbers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--black); border-left: 1px solid var(--line); }
+.cg-stat { padding: 34px 28px; background: var(--white); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cg-stat strong { display: block; font-family: var(--font-head); font-size: clamp(30px, 3.2vw, 44px); font-weight: 700; letter-spacing: -0.8px; line-height: 1.1; color: var(--black); margin-bottom: 10px; }
+.cg-stat span { display: block; font-size: 15px; line-height: 1.5; }
+.skills-jobs { padding: 34px 28px; background: var(--black); color: var(--white-80); border-bottom: 1px solid var(--black); }
+.skills-jobs h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: var(--white); font-size: 26px; margin-bottom: 8px; }
+.skills-jobs h3 i { color: var(--red); }
+.skills-jobs p { margin: 0; font-size: 15px; line-height: 1.5; }
+
+@media (max-width: 991.98px) {
+  .cg-numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cg-history { position: static; min-height: 340px; }
+  .cg-history img { max-height: 300px; }
+}
+@media (max-width: 575.98px) {
+  .cg-numbers { grid-template-columns: minmax(0, 1fr); }
+  .history li { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+}

@@ -1,0 +1,41 @@
+/* ==========================================================
+   QUALIFICATION PAGES: layout shared by the five subject pages
+   The levels are drawn as a pathway: one line, one stop per level.
+   (each subject also has its own file in css/pages/)
+   ========================================================== */
+.qual-intro h2 { font-size: clamp(28px, 3.2vw, 42px); letter-spacing: -0.5px; }
+.qual-intro { overflow: visible; }
+@media (min-width: 992px) { .qual-intro .col-lg-5 { position: sticky; top: 110px; align-self: flex-start; } }
+
+.pathway-head { margin-bottom: 44px; }
+.qual-group-title { font-size: 24px; margin: 52px 0 24px; }
+.qual-group-title:first-child { margin-top: 0; }
+
+.level-block { position: relative; display: grid; grid-template-columns: 124px minmax(0, 1fr); padding-bottom: 34px; }
+.level-block::before { content: ""; position: absolute; left: 124px; top: 0; bottom: 0; width: 2px; background: var(--black); }
+.level-head { grid-column: 1; grid-row: 1 / span 40; color: var(--black); }
+.level-head::after { content: ""; position: absolute; left: 116px; top: 8px; width: 18px; height: 18px; border: 4px solid var(--soft); border-radius: 50%; background: var(--red); }
+.level-head span { display: block; font-family: var(--font-head); font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+.level-head strong { display: block; font-family: var(--font-head); font-size: 54px; font-weight: 700; line-height: 1; color: var(--black); }
+.course-row { grid-column: 2; display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-left: 34px; padding: 16px 22px; background: var(--white); border: 1px solid var(--line); color: var(--black); font-weight: 500; transition: border-color 0.25s var(--ease); }
+.course-row + .course-row { margin-top: -1px; }
+.course-row:hover { position: relative; border-color: var(--black); }
+.course-code { flex-shrink: 0; color: var(--text); font-size: 14px; font-weight: 600; }
+.qual-note { margin: 14px 0 0 158px; max-width: 760px; }
+
+/* photo tiles to the other subjects */
+.other-qual { display: block; height: 100%; }
+.other-qual img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); margin-bottom: 16px; }
+.other-qual h3 { display: flex; justify-content: space-between; gap: 10px; font-size: 18px; line-height: 1.35; margin: 0; transition: color 0.25s var(--ease); }
+.other-qual h3 i { color: var(--red); }
+.other-qual:hover h3 { color: var(--red); }
+
+@media (max-width: 767.98px) {
+  .level-block { grid-template-columns: 64px minmax(0, 1fr); }
+  .level-block::before { left: 64px; }
+  .level-head::after { left: 56px; }
+  .level-head span { font-size: 10px; letter-spacing: 1px; }
+  .level-head strong { font-size: 36px; }
+  .course-row { flex-direction: column; align-items: flex-start; gap: 4px; margin-left: 22px; padding: 14px 16px; }
+  .qual-note { margin-left: 0; }
+}
